@@ -6,9 +6,14 @@ function mostrarAumento()
 {var numero1;
     var numero2;
     var descuento;
-    parseInt(descuento = 1.25);
+    var cien;
+    var resultadofinal;
+    parseInt(descuento = 25);
+    parseInt(cien = 100);
     numero1 = parseInt(document.getElementById("importe").value);
-    numero2 = (numero1 / descuento);
-    document.getElementById("resultado").value = numero2
+    numero2 = numero1 * descuento / cien;
+    resultadofinal = numero1 - numero2;
+    numero2 = resultadofinal;
+    document.getElementById("resultado").value = numero2;
 	
 }
