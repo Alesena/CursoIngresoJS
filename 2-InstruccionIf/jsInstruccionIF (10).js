@@ -4,11 +4,11 @@ function mostrar()
 	var numero
 	numero=Math.round(Math.random()*10);
 
-	if (numero>8)
+	if (numero>(8))
 	{alert (numero+" Excelente!")}
-	else if (numero>=4&&numero<=8)
+	else if (numero>=(4)&&numero<=(8))
 	{alert (numero+ " Aprobó")}
-	else if (numero<4)
+	else if (numero<(4))
 	{alert(numero +(" Vamos, la proxima se puede!"))}
 
 }//FIN DE LA FUNCIÓN
