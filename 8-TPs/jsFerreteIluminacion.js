@@ -15,7 +15,8 @@ function CalcularPrecio ()
     var num1=cantidad*lamparas;
     if (cantidad>=6){descuento=num1*0.50}
     else if (cantidad == 5 && marcas == "ArgentinaLuz")
-    {descuento = num1*0.40}
+    {descuento = num1 - (num1*0.40) }
+    else if (cantidad )
     document.getElementById("precioDescuento").value = descuento;
     
     
