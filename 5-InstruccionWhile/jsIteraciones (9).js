@@ -14,7 +14,7 @@ function mostrar()
 
 	while(isNaN(numero))
 
-    numero =prompt("ingrese un numero");
+	numero =prompt("Error de caracter, ingrese un numero");
 
 	numero= parseInt(numero);  
 
