@@ -18,13 +18,16 @@ function mostrar()
     do {
 
         letra = prompt("Ingrese una letra: ");
-        while (!((letra >= 'A' && letra <= 'Z') || (letra >= 'a' && letra <= 'z'))) {
-            letra = prompt("Es no es una letra. Ingrese una letra: ");
-        }
+        while (!((letra >= 'A' && letra <= 'Z') || (letra >= 'a' && letra <= 'z')))
+        
+        {letra = prompt("Es no es una letra. Ingrese una letra: ");}
+        
         numero = parseInt(prompt("Ingrese numero (-100 y 100): "));
-        while (numero < -100 || numero > 100 || isNaN(numero)) {
-            numero = parseInt(prompt("Numero invalido. Ingrese numero (-100 y 100): "));
-        }
+
+        while (numero < -100 || numero > 100 || isNaN(numero)) 
+
+        {numero = parseInt(prompt("Numero invalido. Ingrese numero (-100 y 100): "));}
+
         // --------------- paridad --------------------
         if (numero % 2 == 0) {
             // par

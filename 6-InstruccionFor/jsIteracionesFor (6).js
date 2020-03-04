@@ -1,15 +1,22 @@
 function mostrar()
 {
-var numero;
-var contadordivisores=0;
-numero= parseInt(prompt("ingrese un numero"));
-for (var i = 1; 1 <=numero; i++)
+    var numero;
+    var contadorpares = 0;
 
-if (numero% 1 ==0) {
+    numero = parseInt(prompt("Ingrese un numero: "));
 
-    console.log(i);
-    contadordivisores++;
-}
+    for (var i = 1; i <= numero; i++) {
+
+        if (i % 2 == 0) {
+            console.log(i);
+            contadorpares++;
+        }
+    }
+
+    console.log("Pares encontrados: " + contadorpares);
+
+
+
 
 
 

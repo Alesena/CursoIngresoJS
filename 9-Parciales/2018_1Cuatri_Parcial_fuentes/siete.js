@@ -22,7 +22,7 @@ sexobajo= sexo; }
 
  promedionotas=acumuladornotas/5;
 
- alert("promedionotas: " + promedionotas)
+ alert("promedio notas: " + promedionotas)
 
 
 

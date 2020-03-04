@@ -1,8 +1,5 @@
 function mostrar()
 {
-
-    function mostrar() {
-
         var numero;
         var contadorDivisores = 0;
     
@@ -10,7 +7,7 @@ function mostrar()
     
         for (var i = 1; i <= numero; i++) {
     
-            if (numero % i == 0) {
+            if (numero % 1 == 0) {
                 console.log(i);
                 contadorDivisores++;
             }
@@ -19,9 +16,5 @@ function mostrar()
         console.log("Divisores encontrados: " + contadorDivisores);
     
     
-    
-    
-    }//FIN DE LA FUNCIÓN
-
 
 }//FIN DE LA FUNCIÓN
