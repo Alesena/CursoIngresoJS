@@ -1,44 +1,75 @@
 function mostrar()
-{var nombre
-    var cantidadpersonas=0
-    var cantdias=0
-    var formapago
-    var cantidadinvitados =nombre+cantidadpersonas;
-    var maxpersonas
-    var promedioreserva
-    var cantidadreservas=0
-var respuesta
-do 
-{ nombre=prompt("Ingrese su nombre");
+{
+
     
-    continuar = respuesta=prompt("Desea seguir cargando datos?");
+var nombre;
+var cantidadpersonas;
+var cantestadia;
+var formadepago;
+var seguir="Desea ingresar datos?";
 
- }
+while (confirm(seguir)){
 
-while (respuesta=="s"||respuesta=="Si"||respuesta=="si")
+nombre=prompt("Ingrese su nombre")
 
-{cantidadpersonas=parseInt(prompt("Ingrese la cantidad de personas"))
+cantidadpersonas=parseInt(prompt("Ingrese cantidad de personas"));
 
-while (isNaN(cantidadpersonas)) {cantidadpersonas=prompt("Error, ingrese un numero valido")}
+while(isNaN(cantidadpersonas)){ 
 
-continuar = respuesta=prompt("Desea seguir cargando datos?");
+cantidadpersonas=prompt("Error, ingrese un numero valido");}
 
-cantdias=parseInt(prompt("Ingrese la cantidad de dias"))
 
-while(isNaN(cantdias)) {cantidias=prompt("Error, ingrese un numero valido")}
 
-continuar = respuesta=prompt("Desea seguir cargando datos?");
 
-formapago=prompt("Ingrese la forma de pago" + "Efectivo, tarjeta o QR")
+cantestadia= parseInt(prompt("Ingrese la cantidad de dias"))
 
-while (!(formapago == " efectivo" || formapago == "tarjeta" ||formapago == "QR"))
+while(isNaN(cantestadias)){ 
 
-{formapago=prompt("Error, ingrese una forma de pago valida")}
+cantestadia=prompt("Error, ingrese un numero valido"); }
 
-continuar = respuesta=prompt("Desea seguir cargando datos?");
+
+
+formadepago=parseInt(prompt("Ingrese una forma de pago (Efectivo, Tarjeta, QR)"))
+
+while(formadepago!= "Efectivo" || formadepago != "tarjeta" || formadepago != "QR")
+
+ {formadepago=prompt("Error, ingrese una forma de pago valida")}  
+
+
+
+
+
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
